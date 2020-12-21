@@ -14,12 +14,46 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+
+
+<div class="city"></div>
+<div class="wind"></div>
+<div class="humidity"></div>
+<div class="temp"></div>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"
+></script>
+<script type="text/javascript">
+  // API key 
+  var APIKey = "9d90fe7e3caef49ff4cad4f9f583b612";
+
+  //  Url to acces the database of the website
+  var queryURL =
+    "https://api.openweathermap.org/data/2.5/weather?q=Bujumbura,Burundi&appid=" +
+    APIKey;
+
+  //  AJAX  to implement the the information we are getting
+  $.ajax({
+    url: queryURL,
+    method: "GET",
+  }).then(function (response) {
+   
+
+
+
+
+  });
+</script>
+
+
 <body>
     <div class="container">
         <div class="row">
             <h1>Weather Dashboard!</h1>
             <div class="topnav">
-
+<div class="text"> Search for a city</div>
                 <input type="text" placeholder="Search..">
             </div>
         </div>

@@ -1,4 +1,9 @@
 h1{
     background-color: black;
     color: green;
+    text-align: center;
 }
+
+card-body.card{
+    color: green;
+    margin-left: 10px;}
