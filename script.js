@@ -27,7 +27,7 @@ $(function () {
   
         // display the temperature, wind, and humidity in text
         
-        $("#temp5").text(data.main.temp + "°");
+        $("#temp").text(data.main.temp + "°");
         $("#wind").text(data.wind.speed + " mph");
         $("#humidity").text(data.main.humidity + " %");
 
