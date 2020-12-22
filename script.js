@@ -31,7 +31,7 @@ $(function () {
         $("#wind").text(data.wind.speed + " mph");
         $("#humidity").text(data.main.humidity + " %");
 
-        var temp = (response.main.temp - 273.15) * 1.8 + 32;
+        var temp5 = (data.main.temp - 273.15) * 1.8 + 32;
         
         
         $("#temp").text("Temperature (F) " + tempF.toFixed(2));
