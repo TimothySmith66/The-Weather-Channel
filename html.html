@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> // Wait for elements to finish loading by placing code in $(function(){})
+        $(function () {
+          // Replace API_KEY with your api key for OpenWeatherAPI
+          var apiKey = "c5b501b47a94dbd44148a427c20e831f";
+          $(document).on("click", ".city", function () {
+            // get the name of the city using the data-city attribute of the clicked
+            // element
+            var city = $(this).attr("data-city");
+            // construct a url to search OpenWeatherAPI for the current weather in the
+            // city
+            var queryUrl =
+              "https://api.openweathermap.org/data/2.5/weather?q=" +
+              city +
+              "&units=imperial&appid=" +
+              apiKey;
+            // send ajax request for current weather to OpenWeatherAPI
+            $.ajax({
+              url: queryUrl,
+              method: "GET",
+            }).then(function (data) {
+             </style>  
+</head>
+
+<body>
+ 
+</body>
+</html>
